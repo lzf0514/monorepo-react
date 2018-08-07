@@ -1,5 +1,5 @@
 {
-  "name": "lzf05142module2",
+  "name": "@lzf05142/module2",
   "version": "0.0.6",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lzf05142module1": "^0.0.6"
+    "@lzf05142/module1": "^0.0.6"
   }
 }

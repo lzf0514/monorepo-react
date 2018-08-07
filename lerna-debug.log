@@ -6,7 +6,7 @@
 5 silly isInitialized true
 6 silly existsSync /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/VERSION
 7 silly initialize attempt
-8 info current version 0.0.0
+8 info current version 0.0.2
 9 silly isDetachedHead
 10 silly getCurrentBranch
 11 verbose getCurrentBranch master
@@ -16,85 +16,92 @@
 15 silly getUpdates
 16 info Checking for updated packages...
 17 silly hasTags
-18 verbose hasTags false
-19 info Comparing with initial commit.
-20 verbose updated module1
-21 verbose updated module2
-22 info Checking for prereleased packages...
-23 silly collectDependents
-24 silly isPackageDependentOf module1 module1
-25 silly isPackageDependentOf module1 module2
-26 silly isPackageDependentOf module2 module1
-27 verbose dependent module2 depends on module1
-28 silly isPackageDependentOf module2 module2
-29 silly isPackageDependentOf module1 module2
-30 silly collectUpdates
-31 verbose has filtered update module1
-32 verbose has filtered update module2
-33 silly initialize success
-34 silly execute attempt
-35 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/lerna.json
-36 silly runScriptSync preversion undefined
-37 silly runScriptSync preversion module1
-38 silly runScriptSync version module1
-39 silly runScriptSync preversion module2
-40 silly runScriptSync version module2
-41 silly runScriptSync version undefined
-42 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/package.json
-43 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/package.json
-44 silly commit v0.0.1
-45 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.1' ]
-46 silly addTag v0.0.1
-47 silly runScriptSync postversion module1
-48 silly runScriptSync postversion module2
-49 silly runScriptSync postversion undefined
-50 info publish Publishing packages to npm...
-51 silly existsSync /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/scripts/prepublish.js
-52 verbose execScript No prepublish script found at /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/scripts/prepublish.js
-53 silly existsSync /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/scripts/prepublish.js
-54 verbose execScript No prepublish script found at /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/scripts/prepublish.js
-55 verbose publishing module1
-56 silly publishTaggedInDir latest module1
-57 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
-58 error publish Retrying failed publish: module1
-59 verbose publish error undefined
-60 verbose publishing module1
-61 silly publishTaggedInDir latest module1
-62 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
-63 error publish Retrying failed publish: module1
-64 verbose publish error undefined
-65 verbose publishing module1
-66 silly publishTaggedInDir latest module1
-67 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
-68 error publish Retrying failed publish: module1
-69 verbose publish error undefined
-70 verbose publishing module1
-71 silly publishTaggedInDir latest module1
-72 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
-73 error publish Retrying failed publish: module1
-74 verbose publish error undefined
-75 verbose publishing module1
-76 silly publishTaggedInDir latest module1
-77 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
-78 error publish Ran out of retries while publishing module1 Error: Command failed: npm publish --tag latest
-78 error publish npm ERR! publish Failed PUT 403
-78 error publish npm ERR! code E403
-78 error publish npm ERR! You do not have permission to publish "module1". Are you logged in as the correct user? : module1
-78 error publish
-78 error publish npm ERR! A complete log of this run can be found in:
-78 error publish npm ERR!     /Users/llai/.npm/_logs/2018-08-07T03_57_25_471Z-debug.log
-78 error publish
-78 error publish     at Promise.all.then.arr (/Users/llai/.nvm/versions/node/v8.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-78 error publish     at <anonymous>
-78 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
-79 error execute callback with error
-80 error Error: Command failed: npm publish --tag latest
-80 error npm ERR! publish Failed PUT 403
-80 error npm ERR! code E403
-80 error npm ERR! You do not have permission to publish "module1". Are you logged in as the correct user? : module1
-80 error
-80 error npm ERR! A complete log of this run can be found in:
-80 error npm ERR!     /Users/llai/.npm/_logs/2018-08-07T03_57_25_471Z-debug.log
-80 error
-80 error     at Promise.all.then.arr (/Users/llai/.nvm/versions/node/v8.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-80 error     at <anonymous>
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag v0.0.2
+21 info Comparing with v0.0.2.
+22 silly diffSinceIn v0.0.2 packages/module1
+23 silly diff packages/module1/index.js
+23 silly diff packages/module1/package.json
+24 silly diffSinceIn v0.0.2 packages/module2
+25 silly diff packages/module2/package.json
+26 verbose updated @lzf05142/module1
+27 verbose updated @lzf05142/module2
+28 info Checking for prereleased packages...
+29 silly collectDependents
+30 silly isPackageDependentOf @lzf05142/module1 @lzf05142/module1
+31 silly isPackageDependentOf @lzf05142/module1 @lzf05142/module2
+32 silly isPackageDependentOf @lzf05142/module2 @lzf05142/module1
+33 verbose dependent @lzf05142/module2 depends on @lzf05142/module1
+34 silly isPackageDependentOf @lzf05142/module2 @lzf05142/module2
+35 silly isPackageDependentOf @lzf05142/module1 @lzf05142/module2
+36 silly collectUpdates
+37 verbose has filtered update @lzf05142/module1
+38 verbose has filtered update @lzf05142/module2
+39 silly initialize success
+40 silly execute attempt
+41 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/lerna.json
+42 silly runScriptSync preversion undefined
+43 silly runScriptSync preversion @lzf05142/module1
+44 silly runScriptSync version @lzf05142/module1
+45 silly runScriptSync preversion @lzf05142/module2
+46 silly runScriptSync version @lzf05142/module2
+47 silly runScriptSync version undefined
+48 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/package.json
+49 silly addFile /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/package.json
+50 silly commit v0.0.3
+51 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.3' ]
+52 silly addTag v0.0.3
+53 silly runScriptSync postversion @lzf05142/module1
+54 silly runScriptSync postversion @lzf05142/module2
+55 silly runScriptSync postversion undefined
+56 info publish Publishing packages to npm...
+57 silly existsSync /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/scripts/prepublish.js
+58 verbose execScript No prepublish script found at /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1/scripts/prepublish.js
+59 silly existsSync /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/scripts/prepublish.js
+60 verbose execScript No prepublish script found at /Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module2/scripts/prepublish.js
+61 verbose publishing @lzf05142/module1
+62 silly publishTaggedInDir latest module1
+63 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
+64 error publish Retrying failed publish: @lzf05142/module1
+65 verbose publish error undefined
+66 verbose publishing @lzf05142/module1
+67 silly publishTaggedInDir latest module1
+68 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
+69 error publish Retrying failed publish: @lzf05142/module1
+70 verbose publish error undefined
+71 verbose publishing @lzf05142/module1
+72 silly publishTaggedInDir latest module1
+73 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
+74 error publish Retrying failed publish: @lzf05142/module1
+75 verbose publish error undefined
+76 verbose publishing @lzf05142/module1
+77 silly publishTaggedInDir latest module1
+78 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
+79 error publish Retrying failed publish: @lzf05142/module1
+80 verbose publish error undefined
+81 verbose publishing @lzf05142/module1
+82 silly publishTaggedInDir latest module1
+83 silly getExecOpts { cwd: '/Users/llai/Workspace/vx-sdc/local-react/monorepo-react/packages/module1' }
+84 error publish Ran out of retries while publishing @lzf05142/module1 Error: Command failed: npm publish --tag latest
+84 error publish npm ERR! publish Failed PUT 402
+84 error publish npm ERR! code E402
+84 error publish npm ERR! You must sign up for private packages : @lzf05142/module1
+84 error publish
+84 error publish npm ERR! A complete log of this run can be found in:
+84 error publish npm ERR!     /Users/llai/.npm/_logs/2018-08-07T04_01_14_141Z-debug.log
+84 error publish
+84 error publish     at Promise.all.then.arr (/Users/llai/.nvm/versions/node/v8.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+84 error publish     at <anonymous>
+84 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+85 error execute callback with error
+86 error Error: Command failed: npm publish --tag latest
+86 error npm ERR! publish Failed PUT 402
+86 error npm ERR! code E402
+86 error npm ERR! You must sign up for private packages : @lzf05142/module1
+86 error
+86 error npm ERR! A complete log of this run can be found in:
+86 error npm ERR!     /Users/llai/.npm/_logs/2018-08-07T04_01_14_141Z-debug.log
+86 error
+86 error     at Promise.all.then.arr (/Users/llai/.nvm/versions/node/v8.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+86 error     at <anonymous>
