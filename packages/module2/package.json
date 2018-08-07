@@ -1,6 +1,6 @@
 {
   "name": "@lzf05142/module2",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lzf05142/module1": "^0.0.6"
+    "@lzf05142/module1": "^0.0.7"
   }
 }
