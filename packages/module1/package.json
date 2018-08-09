@@ -1,6 +1,6 @@
 {
   "name": "@lzf05142/module1",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm-proxy.fury.io/xogroupinc/"
+    "access": "public"
   }
 }
